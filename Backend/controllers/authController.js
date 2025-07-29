@@ -3,10 +3,11 @@ import jwt from 'jsonwebtoken';
 import bcrypt from "bcryptjs";
 const register = async (req, res) => {
     try {
-        const { name, email, password} = req.body;
+        const { name, email, password} = req.body.data;
+      
         const exists = await userModel.findOne({ email: email });
         if (exists) {
-            return res.status(400).json({ success: true, msg: "User Already Existed" });
+            return res.status(200).json({ success: false, msg: "User Already Existed" });
         }
         const salt = await bcrypt.genSalt(10);
         const hash = await bcrypt.hash(password, salt);
@@ -25,7 +26,7 @@ const register = async (req, res) => {
 }
 const login = async (req, res) => {
     try {
-        const { email, password } = req.body;
+        const { email, password } = req.body.data;
         const user = await userModel.findOne({ email: email });
         if (!user) {
             return res.status(400).json({ success: true, msg: "Wrong Credentials" });
