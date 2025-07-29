@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>TaskSplit - Project README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      background-color: #f9f9f9;
-    }
-    h1, h2, h3 {
-      color: #333;
-    }
-    code {
-      background-color: #eee;
-      padding: 2px 4px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    pre {
-      background-color: #eee;
-      padding: 1rem;
-      overflow-x: auto;
-      border-radius: 4px;
-    }
-    ul {
-      margin-left: 1.5rem;
-    }
-  </style>
-</head>
+
 <body>
 
   <h1>TaskSplit - MERN Based Task Distribution System</h1>
