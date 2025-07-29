@@ -41,7 +41,7 @@
   <h2>🧪 Local Setup</h2>
 
   <h3>1. Clone the Repository</h3>
-  <pre><code>git clone https://github.com/your-username/TaskSplit.git
+  <pre><code>git clone https://github.com/giddearyan12/TaskSplit.git
 cd TaskSplit</code></pre>
 
   <h3>2. Install Dependencies</h3>
